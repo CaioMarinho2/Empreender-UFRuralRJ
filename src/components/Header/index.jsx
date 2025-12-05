@@ -1,12 +1,15 @@
+import "./index.css";
+import logo from "../../assets/EmpreenderLogo.jpeg";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { menuData  } from "../../utils/menuData";       
+import { menuHeaderData  } from "../../utils/menuHeaderData";       
 function Header(params) {
    
 
   return (
     <header >
+      <img src={logo} alt="Logotipo do Empreender UFRRJ com um foguete estilizado dentro de um círculo laranja" />
         <nav>   
-             {menuData.map((menu, index) => (
+             {menuHeaderData.map((menu, index) => (
           <Menu
             as="div"
             key={index}

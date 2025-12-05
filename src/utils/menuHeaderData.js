@@ -1,4 +1,4 @@
-export const menuData = [
+export const menuHeaderData = [
   {
     title: "SOBRE",
     items: ["Sobre", "Equipe", "Conexões", "Identidade Visual"],
@@ -23,9 +23,8 @@ export const menuData = [
     ],
   },
   {
-    title: "SOLUÇÕES UFRuralRJ",
+    title: "ECOSSISTEMA DA BAIXADA FLUMINENSE",
     items: ["Consultoria", "Workshops", "Capacitações"],
   },
-  { title: "BLOG", items: [] },
   { title: "CONTATO", items: [] },
 ];
