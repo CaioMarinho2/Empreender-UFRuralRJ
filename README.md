@@ -1,187 +1,398 @@
-# Empreender-UFRuralRJ
+# \# Empreender-UFRuralRJ
 
-Este repositório contém o \*\*versionamento do `wp-content`\*\* do site institucional desenvolvido em WordPress, utilizando o \*\*Local WP\*\* como ambiente de desenvolvimento local.
+# 
 
+# Este repositório contém o \*\*versionamento do código e da estrutura do site institucional Empreender-UFRuralRJ\*\*, desenvolvido em \*\*WordPress\*\*, utilizando o \*\*Local WP\*\* como ambiente de desenvolvimento local.
 
+# 
 
-O objetivo deste projeto é permitir que \*\*toda a equipe trabalhe de forma colaborativa\*\*, mantendo:
+# ---
 
-\- Temas
+# 
 
-\- Plugins
+# \## 🎯 Objetivo do Projeto
 
-\- Configurações versionáveis
+# 
 
-\- Estrutura padronizada de desenvolvimento
+# Permitir que \*\*uma equipe trabalhe em conjunto\*\* no desenvolvimento do site, de forma simples, organizada e segura, separando corretamente:
 
+# 
 
+# \- Código (tema e plugins)
 
-📌 \*\*Importante:\*\*  
+# \- Conteúdo (páginas, posts e mídia)
 
-Este repositório \*\*não contém o WordPress completo\*\*, apenas a pasta `wp-content`, que é a prática recomendada em projetos reais com WordPress.
+# \- Backups completos do site
 
+# 
 
+# 📌 \*\*Importante\*\*  
 
----
+# Este repositório \*\*NÃO contém o WordPress completo\*\* nem o banco de dados ativo.  
 
+# Ele contém \*\*apenas o que deve ser versionado\*\*.
 
+# 
 
-\## 📚 Tecnologias Utilizadas
+# ---
 
+# 
 
+# \## 📚 Tecnologias Utilizadas
 
-\- \*\*WordPress\*\*
+# 
 
-\- \*\*Local WP\*\*
+# \- \*\*WordPress\*\*
 
-\- \*\*Git\*\*
+# \- \*\*Local WP\*\*
 
-\- \*\*GitHub\*\*
+# \- \*\*Git\*\*
 
-\- \*\*PHP\*\*
+# \- \*\*GitHub\*\*
 
-\- \*\*HTML / CSS / JavaScript\*\*
+# \- \*\*PHP\*\*
 
+# \- \*\*HTML / CSS / JavaScript\*\*
 
+# 
 
----
+# ---
 
+# 
 
+# \## 📁 Estrutura do Repositório
 
-\## 📁 Estrutura do Repositório
+# 
 
+# ```text
 
+# Empreender-UFRuralRJ/
 
-Este repositório representa \*\*exatamente\*\* a pasta `wp-content` do WordPress:
+# ├── wp-content/                # Código usado pelo WordPress (VERSIONADO)
 
-wp-content/
+# │   ├── themes/                # Tema do site (layout, header, footer, estilos)
 
-├── themes/ # Tema(s) do projeto
+# │   ├── plugins/               # Plugins utilizados no projeto
 
-├── plugins/ # Plugins utilizados
+# │   └── index.php
 
-├── uploads/ # NÃO versionado (ignorado pelo Git)
+# │
 
-├── .gitignore
+# ├── exports/                   # Exportações de conteúdo do WordPress (XML)
 
-└── README.md
+# │   ├── README.md
 
+# │   └── export-YYYY-MM-DD.xml
 
+# │
 
-Cada pessoa da equipe:
+# ├── zipsbackups/                   # Backups completos do site (ZIP do Local WP)
 
-1\. Instala o WordPress localmente (Local WP)
+# │   └── empreender-YYYY-MM-DD.zip
 
-2\. Usa o \*\*mesmo `wp-content` versionado\*\*
+# │
 
-3\. Trabalha com \*\*seu próprio banco de dados local\*\*
+# ├── .gitignore
 
+# └── README.md
 
-# 🛠️ CONFIGURAÇÃO DO AMBIENTE (PASSO A PASSO)
+# 📌 Função de Cada Pasta
 
+# wp-content/ — VERSÃO PRINCIPAL DO PROJETO
 
+# Contém tema e plugins
 
-\## 1️⃣ Instalar o Local WP
+# 
 
+# É a única pasta utilizada diretamente pelo WordPress
 
+# 
 
-Baixe e instale:
+# Deve ser copiada para dentro do Local WP
 
-👉 https://localwp.com/
+# 
 
+# É versionada com Git
 
+# 
 
----
+# Tudo que envolve layout global (header, footer, estilos) fica aqui
 
+# 
 
+# exports/
 
-\## 2️⃣ Criar um site no Local WP
+# Contém arquivos .xml exportados pelo WordPress
 
+# 
 
+# Utilizado para compartilhar conteúdo entre os membros da equipe
 
-1\. Abra o \*\*Local WP\*\*
+# 
 
-2\. Clique em \*\*Create a new site\*\*
+# Pode conter:
 
-3\. Nome do site: (ex: `projeto-Empreender-UFRRJ`)
+# 
 
-4\. Ambiente: \*\*Preferred\*\*
+# Páginas
 
-5\. Crie um usuário admin (qualquer login)
+# 
 
+# Posts
 
+# 
 
-Finalize a criação.
+# Menus
 
+# 
 
+# Referências de mídia
 
----
+# 
 
+# zipsbackups/
 
+# Contém arquivos .zip exportados pelo Local WP
 
-\## 3️⃣ Abrir a pasta do site
+# 
 
+# Representa um backup completo do site
 
+# 
 
-No Local WP:
+# Usado apenas como segurança
 
-\- Clique com o botão direito no site
+# 
 
-\- \*\*Open site folder\*\*
+# 📌 Manter apenas a versão mais recente
 
+# 📌 Não usar para trabalho diário
 
+# 
 
-Navegue até:
+# 🛠️ Configuração do Ambiente (Passo a Passo)
 
+# 1️⃣ Instalar o Local WP
 
+# Baixar e instalar:
 
-Local Sites/
+# https://localwp.com/
 
-└── nome-do-site/
+# 
 
-└── app/
+# 2️⃣ Criar um site no Local WP
 
-└── public/
+# Abrir o Local WP
 
-\## 4️⃣ Preparar o wp-content
+# 
 
+# Clicar em Create a new site
 
+# 
 
-\### 🔴 Apague a pasta padrão:
+# Nome do site (exemplo): empreender-ufruralrj
 
-app/public/wp-content
+# 
 
+# Ambiente: Preferred
 
+# 
 
+# Criar um usuário administrador (uso apenas local)
 
+# 
 
----
+# 3️⃣ Abrir a pasta do site
 
+# No Local WP:
 
+# 
 
-\## 5️⃣ Clonar o repositório
+# Botão direito no site
 
+# 
 
+# Open site folder
 
-Dentro de:
+# 
 
-app/public/
+# Estrutura esperada:
 
+# 
 
+# text
 
+# Local Sites/
 
+# └── empreender-ufrural/
 
-Execute:
+# &nbsp;   └── app/
 
+# &nbsp;       └── public/
 
+# 4️⃣ Preparar o wp-content
 
-```bash
+# Dentro da pasta public, apagar a pasta padrão:
 
-git clone URL\_DO\_REPOSITORIO
+# 
 
+# text
 
+# 
 
+# app/public/wp-content
 
-Após isso abra o site pelo Local WP
+# ⚠️ Obrigatório para evitar conflitos.
 
+# 
+
+# 5️⃣ Clonar o repositório
+
+# Ainda dentro de app/public, executar:
+
+# 
+
+# bash
+
+# git clone URL\_DO\_REPOSITORIO
+
+# 6️⃣ Renomear a pasta clonada
+
+# Renomear para:
+
+# 
+
+# text
+
+# 
+
+# wp-content
+
+# Estrutura final:
+
+# 
+
+# text
+
+# 
+
+# app/public/
+
+# ├── wp-admin/
+
+# ├── wp-includes/
+
+# ├── wp-content/
+
+# ├── wp-config.php
+
+# └── index.php
+
+# Abrir o site normalmente pelo Local WP.
+
+# 
+
+# 📌 A partir daqui, não é necessário copiar pastas manualmente.
+
+# 
+
+# 🔁 Fluxo de Trabalho em Equipe
+
+# Antes de começar
+
+# bash
+
+# 
+
+# git pull
+
+# Alterações de código (tema ou plugin)
+
+# bash
+
+# 
+
+# git add .
+
+# git commit -m "Descrição clara da alteração"
+
+# git push
+
+# Alterações de conteúdo (páginas e posts)
+
+# Editar páginas/posts no painel WordPress
+
+# 
+
+# Ferramentas → Exportar
+
+# 
+
+# Exportar All content
+
+# 
+
+# Salvar o arquivo em exports/
+
+# 
+
+# Importar no outro ambiente conforme combinado
+
+# 
+
+# 📌 Nunca editar as mesmas páginas ao mesmo tempo.
+
+# 
+
+# Backup completo do projeto
+
+# Local WP → Export site (ZIP)
+
+# 
+
+# Salvar em zipsbackups/
+
+# 
+
+# Manter apenas o backup mais recente
+
+# 
+
+# ❌ Não editar o mesmo conteúdo simultaneamente
+
+# 
+
+# ✔ Trabalhar sempre dentro do wp-content
+
+# ✔ Usar exports/ apenas para troca de conteúdo
+
+# ✔ Usar zipsbackups/ apenas como segurança
+
+# ✔ Sempre executar git pull antes de começar
+
+# 
+
+# 📌 Considerações Finais
+
+# Este fluxo foi escolhido para:
+
+# 
+
+# Facilitar o aprendizado em WordPress
+
+# 
+
+# Permitir trabalho colaborativo sem conflitos
+
+# 
+
+# Evitar perda de conteúdo
+
+# 
+
+# Possibilitar futura migração para um fluxo profissional
+
+# 
+
+# Qualquer alteração estrutural deve ser combinada previamente entre os membros da equipe.
 
