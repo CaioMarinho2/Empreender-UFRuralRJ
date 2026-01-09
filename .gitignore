@@ -1,8 +1,6 @@
 
-plugins/
-
-
-!plugins/meu-plugin-customizado/
+plugins/*
+!plugins/.gitkeep
 
 upgrade/
 cache/
@@ -11,7 +9,6 @@ debug.log
 
 litespeed/
 updraft/
-zipbackups/
 backups-dup-lite/
 
 *.sql
@@ -32,3 +29,11 @@ Thumbs.db
 desktop.ini
 *.swp
 *.swo
+
+node_modules/
+dist/
+build/
+
+!uploads/.gitkeep
+!exports/.gitkeep
+!zipsbackups/.gitkeep
