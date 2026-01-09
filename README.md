@@ -19,6 +19,125 @@ Ele contém **apenas os arquivos necessários para versionamento**.
 - **PHP**
 - **HTML / CSS / JavaScript**
 ---
+
+## 🔌 Plugins Utilizados no Projeto
+
+Este projeto utiliza **plugins de terceiros amplamente adotados pela comunidade WordPress**, instalados diretamente pelo painel administrativo.
+
+⚠️ **Importante:**  
+Os plugins **NÃO são versionados no Git**.  
+Eles são **documentados aqui** para que qualquer membro da equipe consiga reproduzir o ambiente corretamente.
+
+---
+
+## 🧱 Construtor e Layout
+
+- **Elementor**  
+  Construtor visual de páginas (drag and drop).  
+  Utilizado para criar todo o layout das páginas do site sem necessidade de código.
+
+- **ElementsKit Lite**  
+  Conjunto de widgets adicionais para o Elementor.  
+  Utilizado para criação de header, footer, menus, seções avançadas e componentes visuais.
+
+---
+
+## ✍️ Conteúdo e Produtividade
+
+- **Duplicate Page**  
+  Permite duplicar páginas e posts com um clique.  
+  Utilizado para agilizar a criação de novas páginas a partir de modelos existentes.
+
+---
+
+## 📄 Importação e Versionamento de Conteúdo
+
+- **WordPress Importer**  
+  Plugin oficial para importação de conteúdo via arquivos `.xml`.  
+  Utilizado para importar páginas, posts, menus e estruturas de conteúdo entre ambientes.
+
+---
+
+## 🔄 Controle de Versões e Segurança para Iniciantes
+
+- **WP Rollback**  
+  Permite reverter plugins e temas para versões anteriores.  
+  Utilizado como medida de segurança durante testes e aprendizado.
+
+---
+
+## 📝 Formulários
+
+- **WPForms Lite**  
+  Plugin de criação de formulários.  
+  Utilizado para formulários de contato e coleta de informações básicas.
+
+---
+
+## 🔍 SEO (Otimização para Buscadores)
+
+- **Yoast SEO**  
+  Plugin completo de SEO.  
+  Utilizado para orientar boas práticas de SEO on-page, geração de sitemap e análise de conteúdo.
+
+---
+
+## ♿ Acessibilidade
+
+- **Ally – Web Accessibility & Usability**  
+  Plugin focado em acessibilidade digital.  
+  Utilizado para melhorar a usabilidade e acessibilidade do site, especialmente importante em sites institucionais.
+
+---
+
+## ⚙️ Administração do WordPress
+
+- **Admin and Site Enhancements (ASE)**  
+  Plugin para melhorias administrativas e ajustes na interface do WordPress.  
+  Utilizado de forma moderada para facilitar a experiência no painel administrativo.
+
+---
+
+## 📊 Monitoramento, Tags e Integrações
+
+- **PixelYourSite – Your Smart PIXEL (TAG) & API Manager**  
+  Plugin para integração de ferramentas de monitoramento e marketing.  
+  Utilizado para:
+  - Meta Pixel (Facebook)
+  - Google Analytics (GA4)
+  - Google Tag Manager
+  - Inserção de scripts no header e footer  
+  *(Uso previsto principalmente quando o site estiver em produção).*
+
+---
+
+## 🌐 Tradução e Multilíngue
+
+- **Translate WordPress with GTranslate**  
+  Plugin de tradução automática baseado no Google Translate.  
+  Utilizado para tornar o site multilíngue, permitindo acesso ao conteúdo em diferentes idiomas.
+
+---
+
+## 🗂️ Backup e Migração (Uso Pontual)
+
+- **Duplicator**  
+  Plugin de migração e backup do site.  
+  Utilizado apenas em situações específicas de migração, não no fluxo diário.
+
+- **UpdraftPlus – Backup/Restore**  
+  Plugin de backup do WordPress.  
+  Utilizado de forma complementar, quando necessário, fora do fluxo principal de versionamento.
+
+---
+
+## 📌 Observações Finais
+
+- Nenhum plugin acima faz parte do versionamento Git.
+- Todo novo membro da equipe deve instalar manualmente os plugins listados.
+- A lista de plugins pode evoluir conforme o projeto cresce, devendo ser sempre atualizada neste README.
+
+
 ## 📁 Estrutura do Repositório
 ```text
 wp-content/
