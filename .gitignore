@@ -34,6 +34,6 @@ node_modules/
 dist/
 build/
 
-!uploads/.gitkeep
+
 !exports/.gitkeep
 !zipsbackups/.gitkeep
